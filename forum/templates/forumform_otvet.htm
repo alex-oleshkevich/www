@@ -1,0 +1,57 @@
+<form method="post" action="all.php?%adres%&nomer=%nom%&page=%page_abs%&show=yes&icon=%icon%" name=postform>
+ <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#00ccff">
+   <tr><td>
+    <table  border="0" width= "100%" cellpadding="1" cellspacing="1">
+     <tr>
+        <td valign="top"  bgcolor="#FDFDFF" colspan="2" align="center" ><a name="otvet">Ответ на сообщение</a> 
+        | заполнить обязательно <font color="#FF0000">*</font> |
+         <br>  <SCRIPT language=JavaScript>
+            if (Q) document.writeln('Для вставки цитаты, выделете ее и нажмите <a  onmouseover="copyQ();" href="javascript:pasteQ();">нажмите эту ссылку.</a>.')
+            </SCRIPT>
+        </td>
+    </tr>
+
+  <tr>
+      <td bgcolor="#FDFDFF" width="130">Тема:</td>
+      <td bgcolor="#FDFDFF"><b><font color="#FF0000">Re</font></b></td>
+  </tr>
+  <tr>
+      <td bgcolor="#FDFDFF">Ваше имя:</td>
+      <td bgcolor="#FDFDFF"><input class=dats type=text name=name value="%name%" size="31" MAXLENGTH="31"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FDFDFF">E-mail:</td>
+    <td bgcolor="#FDFDFF"><input class=dats type=text name=mail size="31" MAXLENGTH="31" value="%mail%"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FDFDFF">    </td>
+      <td bgcolor="#FDFDFF">
+     <INPUT class=submit accessKey=b name=addbbcode0  onclick=bbstyle(0)  onmouseover="helpline('b')" style="FONT-WEIGHT: bold; WIDTH: 29px"  type=button value=" b "> 
+     <INPUT class=submit accessKey=i name=addbbcode2  onclick=bbstyle(2)  onmouseover="helpline('i')" style="FONT-STYLE: italic; WIDTH: 24px" type=button value=" i "> 
+     <INPUT class=submit accessKey=u name=addbbcode4  onclick=bbstyle(4)  onmouseover="helpline('u')" style="TEXT-DECORATION: underline; WIDTH: 29px" type=button value=" u "> 
+     <INPUT class=submit accessKey=q name=addbbcode6  onclick=bbstyle(6)  onmouseover="helpline('q')" style="WIDTH: 53px" type=button value=" quote "> 
+     <INPUT class=submit accessKey=l name=addbbcode8  onclick=bbstyle(8)  onmouseover="helpline('l')" style="WIDTH: 37px" type=button value=" list "> 
+     <INPUT class=submit accessKey=o name=addbbcode10 onclick=bbstyle(10) onmouseover="helpline('o')" style="WIDTH: 44px" type=button value=" listn "> 
+     <INPUT class=submit accessKey=w name=addbbcode12 onclick=bbstyle(12) onmouseover="helpline('w')" style="WIDTH: 36px" type=button value=" url "> 
+     <A href="javascript:bbstyle(-1)" onmouseover="helpline('a')"> закрыть все теги</A>
+     <br> <INPUT maxLength=130 name=helpbox size=45 style="BACKGROUND-COLOR: #D4DFFF; BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; font-size: 11px; width: 380; height: 20" value="Подсказка: Можно применить стили к выделенному тексту"> 
+    </td>
+  </tr>
+   <tr>
+      <td valign="top" bgcolor="#FDFDFF" rowspan="3">Сообщение:<font color="#FF0000">*</font></td>
+      <td valign="top" bgcolor="#FDFDFF">
+     <TEXTAREA class=dats cols=%cols% name=message  rows=8  tabIndex=1 wrap=virtual>%message_abs%</TEXTAREA>
+ </tr>
+   <tr>
+      <td valign="top" bgcolor="#D4DFFF">
+      %smileses%
+      <input class="submit" type="submit" name="add" type="button" value="%add0%">
+      <input class="submit" type="reset"  value="сброс">      
+      <input class="submit" type="submit" name="prosm" value="предварительный просмотр">
+      </td>
+   </tr>
+  </table>
+ </td>
+ </tr>
+</table>
+</form>
